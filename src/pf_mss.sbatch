@@ -10,8 +10,6 @@
 #SBATCH --mem=32G
 #SBATCH --array=1-150
 
-scratch_dir="/scratch/${SLURM_JOB_USER}/pf_mss/"
-mkdir -p $scratch_dir
 
 module load python/booth/3.8/3.8.5
 
