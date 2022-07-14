@@ -16,7 +16,7 @@ if __name__ == '__main__':
     workdir = os.path.dirname(os.getcwd())
     srcdir = os.getcwd()
     datadir = workdir + '/data/'
-    outputdir = '/scratch/qhaomin/pf_mss/'
+    outputdir = '/project2/lhansen/pf_mss/'
 
     seed = 139
 
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     print(run_time)    
     
     for t in tqdm(range(T-1)):
-        
+        print(t)
         D_t_next = obs_series[:,[t+1]]
         
         Input = [[D_t_next, X_t_particle[i], H_t_particle[i], seed+t+i] for i in range(N)]
