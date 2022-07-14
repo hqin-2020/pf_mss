@@ -9,6 +9,7 @@
 #SBATCH --cpus-per-task=28
 #SBATCH --mem=32G
 #SBATCH --array=1-150
+#SBATCH --exclude=mcn28
 
 
 module load python/booth/3.8/3.8.5

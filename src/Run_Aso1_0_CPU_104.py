@@ -16,7 +16,7 @@ if __name__ == '__main__':
     workdir = os.path.dirname(os.getcwd())
     srcdir = os.getcwd()
     datadir = workdir + '/data/'
-    outputdir = workdir + '/output/'
+    outputdir = '/scratch/qhaomin/pf_mss/'
 
     seed = 104
 
@@ -77,7 +77,7 @@ if __name__ == '__main__':
         H_t_next_particle = [i[2] for i in Output]
         ν_t_next_particle = [i[3] for i in Output]    
         del(Output)
-        if t in [99,199,281]:
+        if t in [49,99,149,199,249,281]:
             with open(casedir + 'θ_' + str(t+1) + '.pkl', 'wb') as f:
                 pickle.dump(θ_t_next_particle, f)
         del(θ_t_next_particle)
