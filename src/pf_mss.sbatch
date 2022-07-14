@@ -6,7 +6,7 @@
 #SBATCH --error=pf_mss.%A_%a.err
 #SBATCH --time=0-8:00:00
 #SBATCH --partition=standard
-#SBATCH --cpus-per-task=28
+#SBATCH --cpus-per-task=32
 #SBATCH --mem=32G
 #SBATCH --array=1-150
 #SBATCH --exclude=mcn28
