@@ -10,6 +10,7 @@ N = 100_000
 T = 283
 
 for i in tqdm(range(1,151)):
+    print(i)
     case = 'actual data, seed = ' + str(i) + ', T = ' + str(T) + ', N = ' + str(N)
     casedir = destination_dir + case  + '/'
     try:
